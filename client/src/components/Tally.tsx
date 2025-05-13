@@ -1,9 +1,9 @@
-import useGame from "../hooks/useGame";
+import usePlayer from "../hooks/usePlayer";
 import '../assets/tally.css';
 
 const Tally = () => {
 
-    const { tally } = useGame().player1;
+    const { tally } = usePlayer().player1;
 
     return (
         <div>

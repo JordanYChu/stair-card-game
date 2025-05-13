@@ -27,6 +27,7 @@ interface GameContextType {
     setGameState: () => boolean;
     setTally: React.Dispatch<React.SetStateAction<Pair[]>>;
     setHand: React.Dispatch<React.SetStateAction<Card[]>>;
+    setStair: React.Dispatch<React.SetStateAction<Card[]>>;
 }
 
 export const GameContext = createContext<GameContextType>({
@@ -102,7 +103,8 @@ const GameProvider = ({ children }: { children: React.ReactNode }) => {
             return !!false
         },
         setHand,
-        setTally
+        setTally,
+        setStair
     }
 
     return (

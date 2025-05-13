@@ -1,4 +1,4 @@
-import useGame from "../hooks/useGame";
+import useGame from "../hooks/usePlayer";
 import '../assets/card.css';
 import '../assets/hand.css'
 const CardStairs = () => {

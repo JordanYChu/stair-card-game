@@ -1,11 +1,11 @@
-import useGame from "../hooks/useGame";
 
 import '../assets/card.css';
 import '../assets/hand.css'
+import usePlayer from "../hooks/usePlayer";
 
 const Hand = () => {
-    const { hand } = useGame().player1;
-    const { playCard } = useGame();
+    const { hand } = usePlayer().player1;
+    const { playCard } = usePlayer();
     return (
         <div>
             <h2>Hand</h2>

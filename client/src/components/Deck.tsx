@@ -1,9 +1,9 @@
 import '../assets/card.css';
 import '../assets/hand.css'
-import useGame from '../hooks/useGame';
+import usePlayer from '../hooks/usePlayer';
 
 const Deck = () => {
-    const { currentCard } = useGame();
+    const { currentCard } = usePlayer();
 
     return (
         <div className="deck">
